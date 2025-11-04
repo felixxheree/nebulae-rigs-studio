@@ -3,7 +3,18 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
+import Builder from "./pages/Builder";
+import Checkout from "./pages/Checkout";
+import Thanks from "./pages/Thanks";
+import Shop from "./pages/Shop";
+import Team from "./pages/Team";
+import Support from "./pages/Support";
+import Testimonials from "./pages/Testimonials";
+import Chatbot from "./pages/Chatbot";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -14,11 +25,25 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div className="min-h-screen flex flex-col">
+          <Navbar />
+          <main className="flex-1 pt-16">
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/builder" element={<Builder />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/thanks" element={<Thanks />} />
+              <Route path="/shop" element={<Shop />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/support" element={<Support />} />
+              <Route path="/testimonials" element={<Testimonials />} />
+              <Route path="/chatbot" element={<Chatbot />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </main>
+          <Footer />
+          <ScrollToTop />
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
