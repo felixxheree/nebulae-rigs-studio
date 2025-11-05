@@ -14,7 +14,7 @@ import Shop from "./pages/Shop";
 import Team from "./pages/Team";
 import Support from "./pages/Support";
 import Testimonials from "./pages/Testimonials";
-import Chatbot from "./pages/Chatbot";
+import Chat from "./pages/Chat";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -37,7 +37,7 @@ const App = () => (
               <Route path="/team" element={<Team />} />
               <Route path="/support" element={<Support />} />
               <Route path="/testimonials" element={<Testimonials />} />
-              <Route path="/chatbot" element={<Chatbot />} />
+              <Route path="/chat" element={<Chat />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
