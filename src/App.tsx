@@ -12,7 +12,7 @@ import BuilderPayment from "./pages/BuilderPayment";
 import BuilderThankYou from "./pages/BuilderThankYou";
 import Checkout from "./pages/Checkout";
 import Thanks from "./pages/Thanks";
-import Shop from "./pages/Shop";
+import Stores from "./pages/Stores";
 import Team from "./pages/Team";
 import Support from "./pages/Support";
 import Testimonials from "./pages/Testimonials";
@@ -37,7 +37,7 @@ const App = () => (
           <Route path="/builder/thankyou" element={<BuilderThankYou />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/thanks" element={<Thanks />} />
-          <Route path="/shop" element={<Shop />} />
+          <Route path="/stores" element={<Stores />} />
           <Route path="/team" element={<Team />} />
           <Route path="/support" element={<Support />} />
           <Route path="/testimonials" element={<Testimonials />} />
