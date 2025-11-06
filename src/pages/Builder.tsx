@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import AnimatedSection from "@/components/AnimatedSection";
 import { Check, ChevronRight } from "lucide-react";
 import { cpuData, gpuData, ramData, storageData, motherboardData, psuData, caseData } from "@/data/components";
+import { motion } from "framer-motion";
 
-type Step = "cpu" | "gpu" | "ram" | "storage" | "motherboard" | "psu" | "case";
+type Step = "cpu" | "gpu" | "ram" | "storage" | "motherboard" | "psu" | "case" | "summary";
 
 const Builder = () => {
   const navigate = useNavigate();
@@ -18,6 +18,7 @@ const Builder = () => {
     motherboard: null,
     psu: null,
     case: null,
+    summary: null,
   });
 
   const steps: { key: Step; label: string }[] = [
@@ -28,6 +29,7 @@ const Builder = () => {
     { key: "motherboard", label: "Motherboard" },
     { key: "psu", label: "PSU" },
     { key: "case", label: "Case" },
+    { key: "summary", label: "Summary" },
   ];
 
   const getCurrentData = () => {
@@ -66,6 +68,7 @@ const Builder = () => {
       case "motherboard": return "Select Motherboard";
       case "psu": return "Choose Power Supply";
       case "case": return "Pick Your Case";
+      case "summary": return "Review Your Build";
     }
   };
 
@@ -102,23 +105,33 @@ const Builder = () => {
           </div>
         </div>
 
-        <AnimatedSection>
-          <h1 className="text-4xl md:text-5xl font-bold mb-2 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h1 className="text-4xl md:text-5xl font-bold mb-2 text-center text-gradient-primary">
             {getStepTitle()}
           </h1>
           <p className="text-center text-muted-foreground mb-12">
             Step {steps.findIndex(s => s.key === currentStep) + 1} of {steps.length}
           </p>
-        </AnimatedSection>
+        </motion.div>
 
-        {/* Component Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {getCurrentData().map((item, index) => (
-            <AnimatedSection key={item.id} delay={index * 50}>
-              <div
+        {/* Component Grid or Summary */}
+        {currentStep !== "summary" ? (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {getCurrentData().map((item, index) => (
+              <motion.div
+                key={item.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
                 onClick={() => handleSelect(item)}
-                className={`glass-card p-6 rounded-2xl cursor-pointer transition-all hover:scale-105 ${
-                  selections[currentStep]?.id === item.id ? "ring-2 ring-primary glow-primary" : ""
+                className={`glass-card p-6 rounded-2xl cursor-pointer transition-all duration-300 ${
+                  selections[currentStep]?.id === item.id 
+                    ? "ring-2 ring-primary shadow-[0_0_30px_rgba(var(--primary),0.5)]" 
+                    : "hover:scale-[1.03] hover:shadow-[0_0_20px_rgba(var(--primary),0.3)]"
                 }`}
               >
                 <div className="aspect-square bg-muted/50 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
@@ -129,33 +142,81 @@ const Builder = () => {
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-bold text-primary">${item.price}</span>
                   {selections[currentStep]?.id === item.id && (
-                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                    <motion.div 
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      className="w-8 h-8 bg-primary rounded-full flex items-center justify-center"
+                    >
                       <Check className="w-5 h-5 text-background" />
-                    </div>
+                    </motion.div>
                   )}
                 </div>
-              </div>
-            </AnimatedSection>
-          ))}
-        </div>
+              </motion.div>
+            ))}
+          </div>
+        ) : (
+          <div className="max-w-4xl mx-auto mb-12 space-y-6">
+            {Object.entries(selections).map(([key, item], index) => 
+              item && key !== "summary" && (
+                <motion.div
+                  key={key}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.3, delay: index * 0.1 }}
+                  className="glass-card p-6 rounded-2xl flex items-center gap-6"
+                >
+                  <div className="w-24 h-24 bg-muted/50 rounded-xl flex items-center justify-center overflow-hidden flex-shrink-0">
+                    <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="flex-grow">
+                    <p className="text-sm text-muted-foreground uppercase mb-1">{key}</p>
+                    <h3 className="font-bold text-lg mb-1">{item.name}</h3>
+                    <p className="text-sm text-muted-foreground">{item.specs}</p>
+                  </div>
+                  <div className="text-2xl font-bold text-primary">${item.price}</div>
+                </motion.div>
+              )
+            )}
+          </div>
+        )}
 
         {/* Summary Bar */}
-        <div className="fixed bottom-0 left-0 right-0 glass-card border-t border-primary/20 py-4 z-40">
-          <div className="container mx-auto px-4 flex items-center justify-between">
-            <div>
-              <p className="text-sm text-muted-foreground">Total Price</p>
-              <p className="text-3xl font-bold text-gradient-primary">${calculateTotal()}</p>
+        {currentStep !== "summary" && (
+          <div className="fixed bottom-0 left-0 right-0 glass-card border-t border-primary/20 py-4 z-40">
+            <div className="container mx-auto px-4 flex items-center justify-between">
+              <div>
+                <p className="text-sm text-muted-foreground">Total Price</p>
+                <p className="text-3xl font-bold text-gradient-primary">${calculateTotal()}</p>
+              </div>
+              <Button
+                onClick={() => setCurrentStep("summary")}
+                disabled={!allSelected}
+                size="lg"
+                className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-background font-bold"
+              >
+                Review Build <ChevronRight className="ml-2 w-5 h-5" />
+              </Button>
             </div>
-            <Button
-              onClick={() => navigate("/checkout")}
-              disabled={!allSelected}
-              size="lg"
-              className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-background font-bold"
-            >
-              Continue to Checkout <ChevronRight className="ml-2 w-5 h-5" />
-            </Button>
           </div>
-        </div>
+        )}
+        
+        {currentStep === "summary" && (
+          <div className="fixed bottom-0 left-0 right-0 glass-card border-t border-primary/20 py-4 z-40">
+            <div className="container mx-auto px-4 flex items-center justify-between">
+              <div>
+                <p className="text-sm text-muted-foreground">Total Price</p>
+                <p className="text-3xl font-bold text-gradient-primary">${calculateTotal()}</p>
+              </div>
+              <Button
+                onClick={() => navigate("/builder/payment")}
+                size="lg"
+                className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-background font-bold"
+              >
+                Proceed to Payment <ChevronRight className="ml-2 w-5 h-5" />
+              </Button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
