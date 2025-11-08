@@ -239,18 +239,6 @@ const Team = () => {
           </div>
         </motion.div>
 
-        {/* Footer Tagline */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mt-20 text-center"
-        >
-          <p className="text-xl md:text-2xl text-gradient-primary font-semibold">
-            From Indonesia to the world — ArcaneRigs is powered by passion, precision, and performance.
-          </p>
-        </motion.div>
       </div>
     </div>
   );
