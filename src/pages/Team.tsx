@@ -189,14 +189,6 @@ const Team = () => {
                 whileHover={{ scale: 1.03 }}
                 className="glass-card p-6 rounded-2xl group cursor-pointer"
               >
-                <div className="aspect-[3/4] rounded-xl overflow-hidden mb-4 relative">
-                  <img
-                    src={exec.image}
-                    alt={exec.name}
-                    className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-                </div>
                 <div className="flex items-center gap-2 mb-1">
                   <h3 className="text-xl font-bold">{exec.name}</h3>
                   <span className="text-2xl">{exec.flag}</span>
