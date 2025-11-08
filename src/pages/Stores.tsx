@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MapPin, Clock, Phone, Star, Filter } from "lucide-react";
 import { motion } from "framer-motion";
-import StoreMap from "@/components/StoreMap";
+
 import { Button } from "@/components/ui/button";
 import {
   Select,
@@ -96,18 +96,6 @@ const Shop = () => {
           </p>
         </motion.div>
 
-        {/* Map Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="mb-12"
-        >
-          <StoreMap 
-            stores={stores} 
-            onStoreClick={(storeId) => setSelectedStore(storeId)}
-          />
-        </motion.div>
 
         {/* Filter Section */}
         <motion.div
