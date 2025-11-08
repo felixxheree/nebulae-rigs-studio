@@ -116,8 +116,8 @@ const Index = () => {
           >
             <div className="glass-card p-8 rounded-2xl glow-primary">
               <img 
-                src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=800&h=600&fit=crop" 
-                alt="Gaming Setup"
+                src="https://images.unsplash.com/photo-1616588589676-62b3bd4ff6d2?w=800&h=600&fit=crop" 
+                alt="Gaming PC Setup"
                 className="rounded-xl w-full"
               />
             </div>
