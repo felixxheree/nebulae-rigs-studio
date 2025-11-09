@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import Builder from "./pages/Builder";
+import Analysis from "./pages/Analysis";
 import BuilderPayment from "./pages/BuilderPayment";
 import BuilderThankYou from "./pages/BuilderThankYou";
 import Checkout from "./pages/Checkout";
@@ -33,6 +34,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/builder" element={<Builder />} />
+          <Route path="/analysis" element={<Analysis />} />
           <Route path="/builder/payment" element={<BuilderPayment />} />
           <Route path="/builder/thankyou" element={<BuilderThankYou />} />
           <Route path="/checkout" element={<Checkout />} />

@@ -208,11 +208,11 @@ const Builder = () => {
                 <p className="text-3xl font-bold text-gradient-primary">${calculateTotal()}</p>
               </div>
               <Button
-                onClick={() => navigate("/builder/payment")}
+                onClick={() => navigate("/analysis", { state: { selections } })}
                 size="lg"
                 className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-background font-bold"
               >
-                Proceed to Payment <ChevronRight className="ml-2 w-5 h-5" />
+                Analyze Performance <ChevronRight className="ml-2 w-5 h-5" />
               </Button>
             </div>
           </div>
