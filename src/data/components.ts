@@ -5,7 +5,7 @@ export const cpuData = [
     name: "AMD Ryzen 9 7945HX",
     specs: "16 Cores / 32 Threads • 5.4 GHz Boost",
     price: 699,
-    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&h=400&fit=crop&auto=format",
+    image: "https://image2url.com/images/1762590392498-0572bd46-a326-4a8e-841e-b58a59595c39.png",
     category: "AMD"
   },
   {
@@ -13,7 +13,7 @@ export const cpuData = [
     name: "AMD Ryzen 9 7950X3D",
     specs: "16 Cores / 32 Threads • 5.7 GHz Boost",
     price: 749,
-    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&h=400&fit=crop&auto=format",
+    image: "https://image2url.com/images/1762590392498-0572bd46-a326-4a8e-841e-b58a59595c39.png",
     category: "AMD"
   },
   {
@@ -21,7 +21,7 @@ export const cpuData = [
     name: "AMD Ryzen 7 7840HS",
     specs: "8 Cores / 16 Threads • 5.1 GHz Boost",
     price: 449,
-    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&h=400&fit=crop&auto=format",
+    image: "https://image2url.com/images/1762590392498-0572bd46-a326-4a8e-841e-b58a59595c39.png",
     category: "AMD"
   },
   {
@@ -29,7 +29,7 @@ export const cpuData = [
     name: "AMD Ryzen 7 7800X3D",
     specs: "8 Cores / 16 Threads • 5.0 GHz Boost",
     price: 499,
-    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&h=400&fit=crop&auto=format",
+    image: "https://image2url.com/images/1762590392498-0572bd46-a326-4a8e-841e-b58a59595c39.png",
     category: "AMD"
   },
   {
@@ -37,7 +37,7 @@ export const cpuData = [
     name: "AMD Ryzen 5 7600X",
     specs: "6 Cores / 12 Threads • 5.3 GHz Boost",
     price: 329,
-    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&h=400&fit=crop&auto=format",
+    image: "https://image2url.com/images/1762590392498-0572bd46-a326-4a8e-841e-b58a59595c39.png",
     category: "AMD"
   },
   // Intel Core
@@ -91,7 +91,7 @@ export const gpuData = [
     specs: "24GB GDDR6X • 2.52 GHz Boost",
     fps: "GTA V Ultra: 200+ FPS",
     price: 1599,
-    image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=400&h=400&fit=crop&auto=format",
+    image: "https://image2url.com/images/1762589911190-a0445b31-13aa-449c-bc66-f5bf9c986077.png",
     category: "NVIDIA"
   },
   {
@@ -100,7 +100,7 @@ export const gpuData = [
     specs: "16GB GDDR6X • 2.55 GHz Boost",
     fps: "GTA V Ultra: 180+ FPS",
     price: 1299,
-    image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=400&h=400&fit=crop&auto=format",
+    image: "https://image2url.com/images/1762589911190-a0445b31-13aa-449c-bc66-f5bf9c986077.png",
     category: "NVIDIA"
   },
   {
@@ -109,7 +109,7 @@ export const gpuData = [
     specs: "12GB GDDR6X • 2.61 GHz Boost",
     fps: "GTA V Ultra: 160+ FPS",
     price: 899,
-    image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=400&h=400&fit=crop&auto=format",
+    image: "https://image2url.com/images/1762589911190-a0445b31-13aa-449c-bc66-f5bf9c986077.png",
     category: "NVIDIA"
   },
   {
@@ -118,7 +118,7 @@ export const gpuData = [
     specs: "8GB GDDR6 • 2.46 GHz Boost",
     fps: "GTA V Ultra: 120+ FPS",
     price: 499,
-    image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=400&h=400&fit=crop&auto=format",
+    image: "https://image2url.com/images/1762589911190-a0445b31-13aa-449c-bc66-f5bf9c986077.png",
     category: "NVIDIA"
   },
   {
@@ -127,7 +127,7 @@ export const gpuData = [
     specs: "24GB GDDR6X • 1.70 GHz Boost",
     fps: "GTA V Ultra: 144+ FPS",
     price: 999,
-    image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=400&h=400&fit=crop&auto=format",
+    image: "https://image2url.com/images/1762589911190-a0445b31-13aa-449c-bc66-f5bf9c986077.png",
     category: "NVIDIA"
   },
   // AMD Radeon RX Series
@@ -185,7 +185,7 @@ export const ramData = [
     specs: "6000MHz • CL30 • Dual Channel",
     brand: "G.Skill",
     price: 599,
-    image: "https://images.unsplash.com/photo-1562976540-1502c2145186?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590055483-9c3adfdb-de3f-4281-bd20-36c8fa8bf8b3.png"
   },
   {
     id: "ram-2",
@@ -193,7 +193,7 @@ export const ramData = [
     specs: "5600MHz • CL28 • Dual Channel",
     brand: "Corsair",
     price: 299,
-    image: "https://images.unsplash.com/photo-1562976540-1502c2145186?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590055483-9c3adfdb-de3f-4281-bd20-36c8fa8bf8b3.png"
   },
   {
     id: "ram-3",
@@ -201,7 +201,7 @@ export const ramData = [
     specs: "5200MHz • CL26 • Dual Channel",
     brand: "Kingston",
     price: 149,
-    image: "https://images.unsplash.com/photo-1562976540-1502c2145186?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590055483-9c3adfdb-de3f-4281-bd20-36c8fa8bf8b3.png"
   },
   {
     id: "ram-4",
@@ -209,7 +209,7 @@ export const ramData = [
     specs: "4800MHz • CL24 • Dual Channel",
     brand: "Crucial",
     price: 79,
-    image: "https://images.unsplash.com/photo-1562976540-1502c2145186?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590055483-9c3adfdb-de3f-4281-bd20-36c8fa8bf8b3.png"
   }
 ];
 
@@ -220,7 +220,7 @@ export const storageData = [
     specs: "Gen4 • 7400MB/s Read • 7000MB/s Write",
     brand: "Samsung",
     price: 999,
-    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590220621-219846f1-2c3a-4413-b7a0-f827d46466b1.png"
   },
   {
     id: "storage-2",
@@ -228,7 +228,7 @@ export const storageData = [
     specs: "Gen4 • 7000MB/s Read • 6850MB/s Write",
     brand: "WD",
     price: 499,
-    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590220621-219846f1-2c3a-4413-b7a0-f827d46466b1.png"
   },
   {
     id: "storage-3",
@@ -236,7 +236,7 @@ export const storageData = [
     specs: "Gen4 • 7000MB/s Read • 6800MB/s Write",
     brand: "Kingston",
     price: 249,
-    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590220621-219846f1-2c3a-4413-b7a0-f827d46466b1.png"
   },
   {
     id: "storage-4",
@@ -244,7 +244,7 @@ export const storageData = [
     specs: "Gen4 • 7000MB/s Read • 5300MB/s Write",
     brand: "Seagate",
     price: 129,
-    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590220621-219846f1-2c3a-4413-b7a0-f827d46466b1.png"
   }
 ];
 
@@ -256,7 +256,7 @@ export const motherboardData = [
     chipset: "X670E",
     socket: "AM5",
     price: 599,
-    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590392498-0572bd46-a326-4a8e-841e-b58a59595c39.png"
   },
   {
     id: "mobo-2",
@@ -265,7 +265,7 @@ export const motherboardData = [
     chipset: "Z790",
     socket: "LGA1700",
     price: 549,
-    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590392498-0572bd46-a326-4a8e-841e-b58a59595c39.png"
   },
   {
     id: "mobo-3",
@@ -274,7 +274,7 @@ export const motherboardData = [
     chipset: "B650",
     socket: "AM5",
     price: 299,
-    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590392498-0572bd46-a326-4a8e-841e-b58a59595c39.png"
   },
   {
     id: "mobo-4",
@@ -283,7 +283,7 @@ export const motherboardData = [
     chipset: "X670",
     socket: "AM5",
     price: 499,
-    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590392498-0572bd46-a326-4a8e-841e-b58a59595c39.png"
   },
   {
     id: "mobo-5",
@@ -292,7 +292,7 @@ export const motherboardData = [
     chipset: "B650E",
     socket: "AM5",
     price: 449,
-    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590392498-0572bd46-a326-4a8e-841e-b58a59595c39.png"
   }
 ];
 
@@ -304,7 +304,7 @@ export const psuData = [
     wattage: "1000W",
     certification: "80+ Gold",
     price: 249,
-    image: "https://images.unsplash.com/photo-1609729544048-4e9907136fcc?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590510726-927f1737-f364-412f-bd5e-88e75065fc5c.png"
   },
   {
     id: "psu-2",
@@ -313,7 +313,7 @@ export const psuData = [
     wattage: "850W",
     certification: "80+ Titanium",
     price: 299,
-    image: "https://images.unsplash.com/photo-1609729544048-4e9907136fcc?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590510726-927f1737-f364-412f-bd5e-88e75065fc5c.png"
   },
   {
     id: "psu-3",
@@ -322,7 +322,7 @@ export const psuData = [
     wattage: "1000W",
     certification: "80+ Platinum",
     price: 279,
-    image: "https://images.unsplash.com/photo-1609729544048-4e9907136fcc?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590510726-927f1737-f364-412f-bd5e-88e75065fc5c.png"
   },
   {
     id: "psu-4",
@@ -331,7 +331,7 @@ export const psuData = [
     wattage: "850W",
     certification: "80+ Gold",
     price: 179,
-    image: "https://images.unsplash.com/photo-1609729544048-4e9907136fcc?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590510726-927f1737-f364-412f-bd5e-88e75065fc5c.png"
   },
   {
     id: "psu-5",
@@ -340,7 +340,7 @@ export const psuData = [
     wattage: "1200W",
     certification: "80+ Gold",
     price: 299,
-    image: "https://images.unsplash.com/photo-1609729544048-4e9907136fcc?w=400&h=400&fit=crop&auto=format"
+    image: "https://image2url.com/images/1762590510726-927f1737-f364-412f-bd5e-88e75065fc5c.png"
   }
 ];
 
@@ -359,7 +359,7 @@ export const caseData = [
     name: "Corsair iCUE 5000X RGB",
     specs: "Dual Tempered Glass • 4 RGB Fans • ATX",
     price: 279,
-    image: "https://images.unsplash.com/photo-1600861194942-f883de0dfe96?w=400&h=400&fit=crop&auto=format",
+    image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=400&h=400&fit=crop&auto=format",
     hasRGB: true
   },
   {
@@ -367,7 +367,7 @@ export const caseData = [
     name: "NZXT H710i RGB",
     specs: "Tempered Glass • Smart RGB • ATX",
     price: 199,
-    image: "https://images.unsplash.com/photo-1591238371159-eb8d1f6936ec?w=400&h=400&fit=crop&auto=format",
+    image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=400&h=400&fit=crop&auto=format",
     hasRGB: true
   },
   {
@@ -375,7 +375,7 @@ export const caseData = [
     name: "Thermaltake View 71 RGB",
     specs: "4-Sided Glass • Riing RGB • ATX",
     price: 299,
-    image: "https://images.unsplash.com/photo-1595006138123-0a7a6a00c96e?w=400&h=400&fit=crop&auto=format",
+    image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=400&h=400&fit=crop&auto=format",
     hasRGB: true
   },
   {
@@ -392,7 +392,7 @@ export const caseData = [
     name: "Fractal Design Define 7",
     specs: "Silent • Mesh Front • ATX",
     price: 179,
-    image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=400&h=400&fit=crop&auto=format",
+    image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=400&h=400&fit=crop&auto=format",
     hasRGB: false
   },
   {
@@ -400,7 +400,7 @@ export const caseData = [
     name: "be quiet! Dark Base 700",
     specs: "Silent • Tempered Glass • ATX",
     price: 169,
-    image: "https://images.unsplash.com/photo-1623317013086-c83c8b995f6d?w=400&h=400&fit=crop&auto=format",
+    image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=400&h=400&fit=crop&auto=format",
     hasRGB: false
   },
   {
@@ -408,7 +408,7 @@ export const caseData = [
     name: "Phanteks Eclipse P500A",
     specs: "Mesh Front • Silent • ATX",
     price: 149,
-    image: "https://images.unsplash.com/photo-1626378893884-01886a9e1ff0?w=400&h=400&fit=crop&auto=format",
+    image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=400&h=400&fit=crop&auto=format",
     hasRGB: false
   },
   {
@@ -424,7 +424,7 @@ export const caseData = [
     name: "Corsair 4000D Airflow",
     specs: "Mesh Front • Compact • ATX",
     price: 109,
-    image: "https://images.unsplash.com/photo-1591799265444-d66432b91588?w=400&h=400&fit=crop&auto=format",
+    image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=400&h=400&fit=crop&auto=format",
     hasRGB: false
   }
 ];
