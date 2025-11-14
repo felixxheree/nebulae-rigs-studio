@@ -54,7 +54,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/chatbot" className="text-muted-foreground hover:text-secondary transition-colors">
+                <Link to="/chat" className="text-muted-foreground hover:text-secondary transition-colors">
                   AI Assistant
                 </Link>
               </li>

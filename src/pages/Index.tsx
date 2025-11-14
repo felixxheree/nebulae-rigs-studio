@@ -152,7 +152,7 @@ const Index = () => {
               <span className="text-gradient-accent">Power</span> Beyond Limits
             </h2>
             <p className="text-xl text-muted-foreground mb-6">
-              Render 3D worlds in seconds with RTX 4090 + Ryzen 9 power. Handle Blender, Premiere Pro, 
+              Render 3D worlds in seconds with RTX 4090 + Ryzen 9 power. Handle Blender, Unity, Premiere Pro, 
               and DaVinci Resolve with professional-grade performance.
             </p>
             <Button asChild size="lg" className="bg-gradient-to-r from-secondary to-accent hover:opacity-90 text-background font-bold">

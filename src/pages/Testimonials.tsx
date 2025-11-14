@@ -272,7 +272,7 @@ const Testimonials = () => {
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Before ArcaneRigs</h3>
+              <h3 className="text-xl font-bold mb-4">Without ArcaneRigs</h3>
               <ul className="space-y-3 text-muted-foreground">
                 <li>• GTA V: 45 FPS (Medium Settings)</li>
                 <li>• Cyberpunk 2077: 30 FPS (Low Settings)</li>
@@ -281,7 +281,7 @@ const Testimonials = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-4 text-gradient-primary">After ArcaneRigs</h3>
+              <h3 className="text-xl font-bold mb-4 text-gradient-primary">With ArcaneRigs</h3>
               <ul className="space-y-3 text-primary font-semibold">
                 <li>• GTA V: 165 FPS (Ultra Settings) ⚡</li>
                 <li>• Cyberpunk 2077: 120 FPS (High Settings) ⚡</li>

@@ -163,7 +163,7 @@ const Team = () => {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-muted-foreground max-w-2xl mx-auto"
           >
-            From Indonesia to the world — powered by passion, precision, and performance.
+            From a small team to the world — powered by passion, precision, and performance.
           </motion.p>
         </motion.div>
 

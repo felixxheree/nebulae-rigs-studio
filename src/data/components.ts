@@ -5,7 +5,7 @@ export const cpuData = [
     name: "AMD Ryzen 9 7945HX",
     specs: "16 Cores / 32 Threads • 5.4 GHz Boost",
     price: 699,
-    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&h=400&fit=crop&auto=format",
+    image: "https://image2url.com/images/1762590392498-0572bd46-a326-4a8e-841e-b58a59595c39.png",
     category: "AMD"
   },
   {
@@ -13,7 +13,7 @@ export const cpuData = [
     name: "AMD Ryzen 9 7950X3D",
     specs: "16 Cores / 32 Threads • 5.7 GHz Boost",
     price: 749,
-    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&h=400&fit=crop&auto=format",
+    image: "https://image2url.com/images/1762590392498-0572bd46-a326-4a8e-841e-b58a59595c39.png",
     category: "AMD"
   },
   {
@@ -21,7 +21,7 @@ export const cpuData = [
     name: "AMD Ryzen 7 7840HS",
     specs: "8 Cores / 16 Threads • 5.1 GHz Boost",
     price: 449,
-    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&h=400&fit=crop&auto=format",
+    image: "https://image2url.com/images/1762590392498-0572bd46-a326-4a8e-841e-b58a59595c39.png",
     category: "AMD"
   },
   {
@@ -29,7 +29,7 @@ export const cpuData = [
     name: "AMD Ryzen 7 7800X3D",
     specs: "8 Cores / 16 Threads • 5.0 GHz Boost",
     price: 499,
-    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&h=400&fit=crop&auto=format",
+    image: "https://image2url.com/images/1762590392498-0572bd46-a326-4a8e-841e-b58a59595c39.png",
     category: "AMD"
   },
   {
@@ -37,7 +37,7 @@ export const cpuData = [
     name: "AMD Ryzen 5 7600X",
     specs: "6 Cores / 12 Threads • 5.3 GHz Boost",
     price: 329,
-    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400&h=400&fit=crop&auto=format",
+    image: "https://image2url.com/images/1762590392498-0572bd46-a326-4a8e-841e-b58a59595c39.png",
     category: "AMD"
   },
   // Intel Core

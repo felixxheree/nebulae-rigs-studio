@@ -47,7 +47,7 @@ const Chat = () => {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">AI <span className="text-gradient-primary">Assistant</span></h1>
           <p className="text-center text-muted-foreground mb-8">Get instant answers about PC builds, components, and orders</p>
-          <p className="text-center text-sm text-muted-foreground/60 mb-8">Note: This chatbot uses Gemini API (set GEMINI_API_KEY in .env for production)</p>
+          <p className="text-center text-sm text-muted-foreground/60 mb-8"> </p>
         </motion.div>
 
         <motion.div className="glass-card rounded-2xl overflow-hidden" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: 0.2 }}>
